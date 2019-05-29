@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'PT Serif', serif;
+  color: #000;
+}
+
+img {
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #1A0DAB;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #1DBDCB;
+}
+
+.menu {
+  box-shadow: 0px 2px 1px 0px gray;
+}
+
+.menu_box {
+  height: 75px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align:center;
+}
+
+.menu_categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  position: sticky;
+}
+
+.menu_block {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+}
+
+.menu_block:hover {
+  color: #1DBDCB;
+  cursor: pointer;
+}
+
+.twitter_icon {
+  width: 18px;
+  height: 18px;
+}
+
+.top_button {
+  width: 116px;
+  height: 41px;
+  color: #fff;
+  background: #000;
+  transition: .4s;
+}
+
+.top_button:hover {
+  background: #1DBDCB;
+  color: #000;
+  cursor: pointer;
+}
+
+.responsive_menu {
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .responsive_menu {
+    display: flex;
+  }
+}

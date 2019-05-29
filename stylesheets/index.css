@@ -1,44 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-family: 'PT Serif', serif;
-  color: #000;
-}
-
-.menu {
-  box-shadow: 0px 2px 1px 0px gray;
-}
-
-.menu_box {
-  height: 75px;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align:center;
-}
-
-.menu_categories {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 15px;
-  position: sticky;
-}
-
-.menu_block {
-  font-size: 14px;
-}
-
-.twitter_icon {
-  width: 18px;
-  height: 18px;
-}
-
 .home_picture {
-  width: 1000px;
+  width: 60%;
   height: 550px;
   margin-bottom: 50px;
 }
@@ -59,12 +20,172 @@ html {
   margin-right: 15%;
 }
 
+.outer_introduce_prof_home {
+  height: 515px;
+  position: relative;
+  margin-bottom:150px;
+}
+
 .introduce_prof_home {
   padding: 20px;
   background-color: #000;
   color: #fff;
   font-weight: bold;
-  width: 1160px;
+  max-width: calc(50% + 600px);
   height: 355px;
   text-align: center;
+}
+
+.introduce_prof_home > p {
+    margin-left: calc(50vw - 600px);
+    font-size: 20px;
+}
+
+.brief_intro_of_prof {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 50px 100px 40px 100px;
+  width:785px;
+  height: 392px;
+  border: solid 1px black;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.picture_and_name {
+  color: #000;
+}
+
+.picture_and_name > p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ishibashisan {
+  width: 187px;
+  height: 229px;
+  margin-bottom: 20px;
+}
+
+.view_button {
+  width: 194px;
+  height: 63px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  transition: .4s;
+}
+
+.view_button:hover {
+  color: #000;
+  background-color: #1DBDCB;
+  cursor: pointer;
+}
+
+.activity_content {
+  margin-bottom: 250px;
+}
+
+.activity_picture {
+  max-width: 69%;
+  height: 380px;
+  margin-left: 39%;
+  position: absolute;
+}
+
+.activity_box {
+  position: relative;
+  left: 24%;
+  top: 60px;
+  width: 617px;
+  box-shadow: 20px 20px 40px rgba(5,5,5,.1);
+  display:flex;
+}
+
+.black_box_activity {
+  width: 250px;
+  height: 261px;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  padding-top: 115px;
+}
+
+
+.two_activity {
+  width: 367px;
+  padding: 80px 70px;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.main_honzemi {
+  padding-bottom: 30px;
+}
+
+.main_sabzemi {
+  padding-top: 30px;
+}
+
+.nyuzemi_information > h2 {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.box_include_three_photos {
+  width: 84%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.home_three_photo {
+  width: 47%;
+  height: 160px;
+}
+
+.home_three_link {
+  margin-top: 20px;
+  font-weight: normal;
+}
+
+.each_section_for_three {
+  text-align: center;
+}
+
+.button_for_three_section {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.add_for_essay {
+  height: 580px;
+}
+
+.essay_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 50px 100px 40px 100px;
+  width:766px;
+  height: 460px;
+  border: solid 1px black;
+  background-color: white;
+}
+
+.two_essays {
+  display:flex;
+  justify-content: space-around;
+}
+
+.essay_photo {
+  width: 177px;
+  height: 215px;
 }

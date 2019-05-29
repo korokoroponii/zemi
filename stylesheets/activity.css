@@ -1,0 +1,122 @@
+.subpage_picture {
+  margin-bottom: 100px;
+}
+
+.sub_main_picture {
+  width: 100%;
+  height: 430px;
+}
+
+.description {
+  margin: 0 auto;
+  width: 900px;
+}
+
+.activity_desc {
+  margin-bottom: 90px;
+}
+
+.activity_intro {
+  font-size: 18px;
+}
+
+.honzemi_box {
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.honzemi_explanation {
+  margin-left: 15%;
+  max-width: 41%;
+  height: 380px;
+  background-color: #000;
+  padding: 55px 200px 55px 50px;
+}
+
+.honzemi_text {
+  color: #fff;
+}
+
+.honzemi_text > h2 {
+  text-align: center;
+}
+
+.honzemi_content {
+  padding-top: 70px;
+}
+
+.honzemi_picture {
+  position: absolute;
+  top: 15%;
+  left: 48%;
+  width: 30%;
+  height: 270px;
+  box-shadow: 20px 20px 50px rgba(5,5,5,.1);
+}
+
+.used_books_for_honzemi {
+  width: 43%;
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 20px 20px 100px rgba(5,5,5,.1);
+  margin-bottom: 150px;
+}
+
+.used_books_for_honzemi > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.each_zemi_book {
+  text-align: center;
+}
+
+.zemi_book_box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.zemi_book {
+  width: 135px;
+  height: 160px;
+}
+
+.each_zemi_book > p {
+  margin-top: 25px;
+}
+
+.subzemi_box {
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.subzemi_explanation {
+  margin-left: 42%;
+  max-width: 41%;
+  height: 380px;
+  background-color: #000;
+  padding: 55px 50px 55px 200px;
+}
+
+.subzemi_text {
+  color: #fff;
+}
+
+.subzemi_text > h2 {
+  text-align: center;
+}
+
+.subzemi_content {
+  padding-top: 70px;
+}
+
+.subzemi_picture {
+  position: absolute;
+  top: 15%;
+  left: 18%;
+  width: 30%;
+  height: 270px;
+  box-shadow: 20px 20px 50px rgba(5,5,5,.1);
+}
