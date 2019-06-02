@@ -12,7 +12,7 @@
   width: 900px;
 }
 
-.small_menu_bar {
+.small_menu_bar_for_laptop {
   width: 900px;
   height: 53px;
   padding: 10px 0 10px 25px;
@@ -29,6 +29,10 @@
   color: #1A0DAB;
 }
 
+.additional_for_nyuzemi {
+  margin-bottom: 100px;
+}
+
 .additional_book {
   width: 135px;
   height: 160px;
@@ -36,4 +40,60 @@
 
 .book_title {
   font-size: 12px;
+}
+
+.small_menu_bar_for_responsive {
+  display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .subpage_picture {
+    margin-bottom: 50px;
+  }
+
+  .sub_main_picture {
+    height: 250px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .small_menu_bar_for_laptop {
+    display:none;
+  }
+
+  .small_menu_bar_for_responsive {
+    display: block;
+    width: 88%;
+    height: 40px;
+    padding: 10px 0 10px 20px;
+    background-color: #000;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .details {
+    width: 88%;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-bottom: 70px;
+  }
+
+  .additional_for_nyuzemi {
+    text-align: center;
+  }
+
+  .additional_book {
+    width: 115px;
+    height: 145px;
+  }
+
+  .book_title {
+    font-size: 12px;
+  }
 }

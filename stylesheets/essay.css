@@ -12,7 +12,7 @@
   width: 900px;
 }
 
-.small_menu_bar {
+.small_menu_bar_for_laptop {
   width: 900px;
   height: 53px;
   padding: 10px 0 10px 25px;
@@ -28,4 +28,44 @@
 .link_for_each {
   color: #1A0DAB;
   text-decoration: none;
+}
+
+.small_menu_bar_for_responsive {
+  display:none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .subpage_picture {
+    margin-bottom: 50px;
+  }
+
+  .sub_main_picture {
+    height: 250px;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .small_menu_bar_for_laptop {
+    display:none;
+  }
+
+  .small_menu_bar_for_responsive {
+    display: block;
+    width: 88%;
+    height: 40px;
+    padding: 10px 0 10px 20px;
+    background-color: #000;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .details {
+    width: 88%;
+    margin: 0 auto;
+    font-size: 14px;
+    margin-bottom: 70px;
+  }
 }

@@ -2,7 +2,7 @@
   max-width: 100%;
   height: 350px;
   background-image: url("../images/zemi_sample3.jpg");
-  padding: 40px 40px 120px 40px;;
+  padding: 40px 40px 120px 40px;
 }
 
 .footer > h2 {
@@ -17,4 +17,27 @@
 
 .ask_for_contact {
   text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 200px;
+    padding: 30px 20px 30px 20px;
+  }
+
+  .footer > h2 {
+    font-size: 14px;
+  }
+
+  .footer_main {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ask_for_contact {
+    text-align: center;
+    font-size: 12px;
+  }
 }

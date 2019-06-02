@@ -84,5 +84,15 @@ a:hover {
 
   .responsive_menu {
     display: flex;
+    height: 55px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .menu_icon {
+    width: 30px;
+    height: 30px;
   }
 }
