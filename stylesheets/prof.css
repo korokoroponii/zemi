@@ -5,6 +5,7 @@
 .sub_main_picture {
   width: 100%;
   height: 430px;
+  transform:rotateX(180deg);
 }
 
 .name_and_picture {
@@ -12,7 +13,19 @@
   display: flex;
   margin: 0 auto;
   margin-bottom: 70px;
+  /* animation-name:fade-in1;
+  animation-duration:4s; //アニメーション時間
+  animation-timing-function: ease-out; //アニメーションさせるイージング
+  animation-delay:1s; //アニメーション開始させる時間
+  animation-iteration-count:1; //繰り返し回数
+  animation-direction:normal; //往復処理をするかどうか
+  /* animation-fill-mode: forwards; //アニメーション後のスタイルをどうするか */
 }
+
+/* @keyframes fade-in1 {
+  0% {opacity: 0}
+  100% {opacity: 1}
+} */
 
 .basic_information {
   background-color: #1DBDCB;
@@ -47,6 +60,13 @@
 .details {
   margin-bottom: 70px;
   width: 900px;
+  /* animation-name:fade-in1;
+  animation-duration:4s; //アニメーション時間
+  animation-timing-function: ease-out; //アニメーションさせるイージング
+  animation-delay:1s; //アニメーション開始させる時間
+  animation-iteration-count:1; //繰り返し回数
+  animation-direction:normal; //往復処理をするかどうか
+  animation-fill-mode: forwards; //アニメーション後のスタイルをどうするか */
 }
 
 .name_for_responsive {
@@ -55,6 +75,16 @@
 
 .small_menu_bar_for_responsive {
   display: none;
+}
+
+.invisible {
+  transition: opacity 0.5s ease;
+  opacity: 0.0;
+}
+
+.visible {
+  transition: opacity 1.0s ease;
+  opacity: 1.0;
 }
 
 

@@ -5,6 +5,7 @@
 .sub_main_picture {
   width: 100%;
   height: 430px;
+  transform:rotateX(180deg);
 }
 
 .description {

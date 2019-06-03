@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>教授紹介</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="ScrollTrigger.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+      	var trigger = new ScrollTrigger();
+      });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/header.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/prof.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
@@ -59,7 +66,7 @@
       <div class = "small_menu_bar_for_responsive">
         <span style="font-weight:bold; font-size: 16px; color: #fff;">略歴</span>
       </div>
-      <div class = "details">
+      <div class = "details" class="animated" data-scroll="once toggle(.fadeInLeft, .invisible) addHeight">
         1964年： 山口県生まれ<br>
         1987年： 慶応義塾大学経済学部卒業<br>
         1989年： 同大学大学院経済学研究科修士課程終了<br>
@@ -80,7 +87,7 @@
       <div class = "small_menu_bar_for_responsive">
         <span style="font-weight:bold; font-size: 16px; color: #fff;">担当科目(2019年度)</span>
       </div>
-      <div class = "details">
+      <div class = "details" class="animated" data-scroll="once toggle(.fadeInLeft, .invisible) addHeight">
         [学部通学課程]<br>
         ミクロ経済学初級 II・ミクロ経済学中級 II・ 産業組織論・研究会<br>
         [大学院][学部通学課程]<br>
@@ -95,7 +102,7 @@
       <div class = "small_menu_bar_for_responsive">
         <span style="font-weight:bold; font-size: 16px; color: #fff;">主要業績</span>
       </div>
-      <div class = "details">
+      <div class = "details" class="animated" data-scroll="once toggle(.fadeInLeft, .invisible) addHeight">
         <span style = "font-weight: bold;">単著論文</span><br>
         ・”Effects of Asymmetric Information within a Firm on Oligopolistic Market Outcomes,” Japanese Economic Review, Vol.61, No.4, pp.488-506, 2010.<br>
         ・”Strategic Delegation under Quality Competition,” Journal of Economics, Vol.73, No.1, pp.25-56, 2001.<br>
