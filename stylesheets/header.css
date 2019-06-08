@@ -7,6 +7,7 @@
 html {
   font-family: 'PT Serif', serif;
   color: #000;
+  overflow-x: hidden;
 }
 
 img {
@@ -24,7 +25,13 @@ a:hover {
 }
 
 .menu {
-  box-shadow: 0px 2px 1px 0px gray;
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.4);
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  z-index:24;
+  background-color: #fff;
 }
 
 .menu_box {

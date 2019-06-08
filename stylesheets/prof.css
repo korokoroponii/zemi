@@ -1,11 +1,13 @@
 .subpage_picture {
   margin-bottom: 100px;
+  padding-top: 75px;
 }
 
 .sub_main_picture {
   width: 100%;
   height: 430px;
   transform:rotateX(180deg);
+  background-attachment: fixed;
 }
 
 .name_and_picture {
