@@ -10,7 +10,9 @@
       	var trigger = new ScrollTrigger();
       });
     </script>
+    <script src="main.js"></script>
     <link rel="stylesheet" type="text/css" href= "animate.css/animate.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/header.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/index.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
@@ -26,13 +28,23 @@
              <nav><a href = "entry_zemi.html" class = "menu_block" >入ゼミ情報</a></nav>
              <nav><a href = "essay.html" class = "menu_block" >論文公開</a></nav>
              <nav><a href = "https://twitter.com/ishibashi_2019" class = "menu_block"><img  class = "twitter_icon" src = "images/twittericon.png"></a></nav>
-             <nav><a class = "menu_block" ><button class = "top_button" type="button">お問い合わせ</button></a></nav>
+             <nav><a class = "menu_block" href = "#footer"><button class = "top_button" type="button">お問い合わせ</button></a></nav>
         </header>
       </div>
     </div>
-    <div class = "responsive_menu">
+    <div class = "responsive_menu" id="responsive_menu">
       <nav><a href = "index.html" class = "menu_block" >石橋研究会<br>慶應義塾大学</a></nav>
-      <img  class = "menu_icon" src = "images/menu_bar.png">
+      <img  class = "menu_icon" id="text-button" src = "images/menu_bar.png">
+      <div class = "responsive_menu_box" id = "responsive_menu_box">
+         <div class = "responsive_menu_cover">
+           <nav><a href = "prof.html" class = "menu_block" >教授紹介</a></nav>
+           <nav><a href = "activity.html" class = "menu_block" >活動内容</a></nav>
+           <nav><a href = "entry_zemi.html" class = "menu_block" >入ゼミ情報</a></nav>
+           <nav><a href = "essay.html" class = "menu_block" >論文公開</a></nav>
+           <nav><a href = "#footer" class = "menu_block" >お問い合わせ</a></nav>
+         </div>
+         <img  class = "menu_icon" id="text-button-close" src = "images/menu_bar2.png">
+      </div>
     </div>
     <div class = "top_picture_for_home">
       <image class = "home_picture" src = "images/working.jpg">
@@ -58,7 +70,7 @@
         </p>
       </div>
     </div>
-    <div class = "outer_introduce_prof_home">
+    <div class = "outer_introduce_prof_home animated" data-scroll="once toggle(.bounceInLeft, .invisible) addHeight">
       <div class = "introduce_prof_home">
         <p>教授紹介</p>
         <div class="brief_intro_of_prof">
@@ -74,7 +86,7 @@
         </div>
       </div>
     </div>
-    <div class = "activity_content">
+    <div class = "activity_content animated" data-scroll="once toggle(.fadeIn, .invisible) addHeight">
       <image class = "activity_picture" src = "images/whole2.jpg">
       <div class = "activity_box">
         <div class = "black_box_activity">
@@ -92,7 +104,7 @@
     </div>
     <div class = "nyuzemi_information">
       <h2>入ゼミ情報</h2>
-      <div class = "box_include_three_photos">
+      <div class = "box_include_three_photos animated" data-scroll="once toggle(.fadeIn, .invisible) addHeight">
         <div class = "each_section_for_three">
           <image class = "home_three_photo" src = "images/zemi_info.jpg"><br>
           <p class = "home_three_link"><a href="">2年生向けゼミ紹介</a></p>
@@ -110,7 +122,7 @@
         <a href = "entry_zemi.html"><button class = "view_button" type="button">VIEW MORE</button></a>
       </div>
     </div>
-    <div class = "outer_introduce_prof_home add_for_essay">
+    <div class = "outer_introduce_prof_home add_for_essay animated" data-scroll="once toggle(.bounceInLeft, .invisible) addHeight">
       <div class = "introduce_prof_home">
         <p>論文公開</p>
         <div class="essay_content">
@@ -130,7 +142,7 @@
         </div>
       </div>
     </div>
-    <div class = "footer">
+    <div class = "footer" id = "footer">
       <h2>お問い合わせ<br>CONTACT</h2>
       <p class = "footer_main">
         <a href = "">email: a@gmail.com</a> ｜ <a href = "https://twitter.com/ishibashi_2019">twitter: ‎@ishibashi_2019</a>

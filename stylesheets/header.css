@@ -83,6 +83,21 @@ a:hover {
   display: none;
 }
 
+.responsive_menu_box {
+  display: none;
+  position: fixed;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top:0;
+  z-index: 99;
+}
+
+.responsive_menu_box .menu_block {
+  color: white;
+}
+
 
 @media screen and (max-width: 768px) {
   .menu {
@@ -101,5 +116,25 @@ a:hover {
   .menu_icon {
     width: 30px;
     height: 30px;
+  }
+
+  .responsive_menu_box {
+    display: none;
+    position: fixed;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top:0;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    padding: 7%;
+  }
+
+  .responsive_menu_box .menu_block {
+    color: white;
+    font-size: 20px;
+    text-decoration: underline;
   }
 }

@@ -202,8 +202,18 @@
   display:none;
 }
 
+.invisible {
+    transition: opacity 0.5s ease;
+    opacity: 0.0;
+}
+
+.visible {
+    transition: opacity 0.5s ease;
+    opacity: 1.0;
+}
 
 @media screen and (max-width: 768px) {
+
 
   .home_picture {
     display: none;
