@@ -10,6 +10,11 @@
       	var trigger = new ScrollTrigger();
       });
     </script>
+    <link href="slick/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="slick/slick/slick.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <script src="main.js"></script>
     <link rel="stylesheet" type="text/css" href= "animate.css/animate.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/header.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/activity.css">
@@ -26,13 +31,27 @@
              <nav><a href = "entry_zemi.html" class = "menu_block" >入ゼミ情報</a></nav>
              <nav><a href = "essay.html" class = "menu_block" >論文公開</a></nav>
              <nav><a href = "https://twitter.com/ishibashi_2019" class = "menu_block"><img  class = "twitter_icon" src = "images/twittericon.png"></a></nav>
-             <nav><a class = "menu_block" ><button class = "top_button" type="button">お問い合わせ</button></a></nav>
+             <nav><a class = "menu_block" href = "#footer"><button class = "top_button" type="button">お問い合わせ</button></a></nav>
         </header>
       </div>
     </div>
-    <div class = "responsive_menu">
+    <!-- <div class = "responsive_menu">
       <nav><a href = "index.html" class = "menu_block" >石橋研究会<br>慶應義塾大学</a></nav>
       <img  class = "menu_icon" src = "images/menu_bar.png">
+    </div> -->
+    <div class = "responsive_menu" id="responsive_menu">
+      <nav><a href = "index.html" class = "menu_block" >石橋研究会<br>慶應義塾大学</a></nav>
+      <img  class = "menu_icon" id="text_button" src = "images/menu_bar.png">
+      <div class = "responsive_menu_box" id = "responsive_menu_box">
+         <div class = "responsive_menu_cover">
+           <nav><a href = "prof.html" class = "menu_block" >教授紹介</a></nav>
+           <nav><a href = "activity.html" class = "menu_block" >活動内容</a></nav>
+           <nav><a href = "entry_zemi.html" class = "menu_block" >入ゼミ情報</a></nav>
+           <nav><a href = "essay.html" class = "menu_block" >論文公開</a></nav>
+           <nav><a href = "#footer" class = "menu_block" >お問い合わせ</a></nav>
+         </div>
+         <img  class = "menu_icon" id="text-button-close" src = "images/menu_bar2.png">
+      </div>
     </div>
     <div class = "subpage_picture">
       <img class = "sub_main_picture" src = "images/proftalk.JPG">
@@ -43,7 +62,7 @@
         ゼミは基本的にはプレゼンテーションスタイルであり、毎週ゼミ員がローテーションで発表を行います。
       </p>
     </div>
-    <div class = "honzemi_box animated" data-scroll="once toggle(.zoomIn, .invisible) addHeight">
+    <div class = "honzemi_box animated" id ="honzemi" data-scroll="once toggle(.zoomIn, .invisible) addHeight">
       <div class = "honzemi_explanation">
         <div class = "honzemi_text">
           <h2>本ゼミ</h2>
@@ -84,7 +103,7 @@
         </div>
       </div>
     </div>
-    <div class = "subzemi_box animated" data-scroll="once toggle(.zoomIn, .invisible) addHeight">
+    <div class = "subzemi_box animated" id = "subzemi" data-scroll="once toggle(.zoomIn, .invisible) addHeight">
       <div class = "subzemi_explanation">
         <div class = "subzemi_text">
           <h2>サブゼミ</h2>
@@ -93,11 +112,11 @@
           </p>
         </div>
       </div>
-      <image class = "subzemi_picture" src = "images/zemi_sample3.jpg">
+      <image class = "subzemi_picture" src = "images/presen1.jpeg">
     </div>
     <div class = "responsive_honzemi_box">
       <div class = "responsive_honzemi_picture_cover">
-        <image class = "responsive_honzemi_picture" src = "images/zemi_sample3.jpg">
+        <image class = "responsive_honzemi_picture add_muki" src = "images/presen1.jpeg">
       </div>
       <div class = "responsive_honzemi_explanation">
         <div class = "responsive_honzemi_text">
@@ -126,10 +145,10 @@
         </div>
       </div>
     </div>
-    <div class = "footer">
+    <div class = "footer" id = "footer">
       <h2>お問い合わせ<br>CONTACT</h2>
       <p class = "footer_main">
-        <a href = "">email: a@gmail.com</a> ｜ <a href = "https://twitter.com/ishibashi_2019">twitter: ‎@ishibashi_2019</a>
+        <a class = "contact" href = "">email: a@gmail.com</a> ｜ <a class = "contact" href = "https://twitter.com/ishibashi_2019">twitter: ‎@ishibashi_2019</a>
       </p>
       <p class = "ask_for_contact">上記より気軽にお問い合わせ下さい。</p>
     </div>

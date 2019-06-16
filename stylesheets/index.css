@@ -1,11 +1,26 @@
+/* .slider img {
+  width: 80%;
+  object-fit: cover;
+} */
+
+
 .top_picture_for_home {
   padding-top: 75px;
+  height: 675px;
 }
 
 .home_picture {
   width: 60%;
   height: 550px;
   margin-bottom: 50px;
+}
+
+.slide_one {
+  transform:rotateX(180deg);
+}
+
+.slide_four {
+  transform:rotateX(180deg);
 }
 
 .welcome_message {
@@ -212,17 +227,28 @@
     opacity: 1.0;
 }
 
+.top_picture_for_home_for_responsive {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
 
+  .top_picture_for_home {
+    display:none;
+  }
 
-  .home_picture {
-    display: none;
+  .top_picture_for_home_for_responsive {
+    display: block;
   }
 
   .responsive_home_picture {
     display: block;
     max-width: 100%;
     height:250px;
+  }
+
+  .slide_one .slide_two .slide_three .slide_four {
+    max-width: 100%;
   }
 
   .welcome_message {
